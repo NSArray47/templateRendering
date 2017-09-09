@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Controllers">
+      <UniqueIdentifier>{a3cbee7e-6151-45d7-8c1a-428d6da79902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{3a76d06a-a91b-446d-93aa-aa059b826e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{f8d7678e-0c28-4c47-a4db-142309cddb4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderedView">
+      <UniqueIdentifier>{10aef97a-563f-41e1-ab70-835952aed7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DTO">
+      <UniqueIdentifier>{642f4338-5872-43a5-ba6c-db0ce540f01b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\Parser.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AppStart.cpp" />
+    <ClCompile Include="DTO\DTO.cpp">
+      <Filter>DTO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\HelperFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\Parser.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DTO\DTO.h">
+      <Filter>DTO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\HelperFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="View\Index.txt">
+      <Filter>View</Filter>
+    </Text>
+    <Text Include="View\Data.txt">
+      <Filter>View</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="View\EmptyHTMLPage.htm">
+      <Filter>View</Filter>
+    </None>
+    <None Include="RenderedView\Index.html">
+      <Filter>RenderedView</Filter>
+    </None>
+    <None Include="View\Style.css" />
+  </ItemGroup>
+</Project>
