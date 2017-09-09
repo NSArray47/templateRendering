@@ -14,7 +14,7 @@ string DTO::GetFileContent(string filename)
 void DTO::SaveStringToFile(string fileContent)
 {
 	ofstream ofs("RenderedView/Index.html", ios_base::out | ios_base::trunc);
-	if (!ofs.is_open())
+	if (!ofs.is_open()) // мб цього не потрібно? навіть якщо файл запису не буде знайдено то він просто створиться. натомість можна перевіряти чи файл не рідонлі.
 	{
 		cout << "can not open file";
 	}
